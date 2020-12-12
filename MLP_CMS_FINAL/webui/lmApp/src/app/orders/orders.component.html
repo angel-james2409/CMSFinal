@@ -1,0 +1,31 @@
+<br><br>
+<div style="text-align:center">
+    <h1>
+    
+      CANTEEN MANAGEMENT
+
+    </h1>
+
+<br><br>
+
+<form #orderForm="ngForm" (ngSubmit)="orderFun(orderForm)"> 
+    
+    Order Id:<input type="text" name="orderId" id="orderId" #orderId="ngModel"  ngModel ><br>
+   <br>
+    Customer Id:<input type="text" name="customerId" id="customerId"  #customerId="ngModel" ngModel><br>
+   <br>
+    VendorId:<input type="text" name="vendorId" id="vendorId"  #vendorId="ngModel" ngModel><br>
+   <br>
+    Order Status:
+   <select id="orderStatus" name="orderStatus"  #orderStatus="ngModel"  ngModel>
+       <option value="Accepted">Accepted</option>
+       <option value="Rejected">Rejected</option>
+   </select>
+   
+    <br><br>
+
+    <input type="submit" value="submit">
+</form>
+
+<br><br>
+<a routerLink="/accrej">Previous page</a>

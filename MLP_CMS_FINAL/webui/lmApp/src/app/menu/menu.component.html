@@ -1,0 +1,22 @@
+<p>MENU DETAILS</p>
+<br><br>
+    
+
+<table border ="2">
+    <tr>
+        <th>Id</th>
+        <th>items</th>
+        <th>cost</th>
+        <th>Time required</th>
+
+    </tr>
+    <tr *ngFor="let m of menuDetails">
+        <td>{{m.foodId}}</td>
+        <td>{{m.foodName}}</td>
+        <td>{{m.price}}</td>
+        <td>{{m.preprationTime}}</td>
+    
+    </tr>
+    </table>
+    <br><br>
+    <a routerLink="/accrej">acceptreject</a>
